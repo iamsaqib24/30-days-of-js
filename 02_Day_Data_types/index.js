@@ -40,3 +40,23 @@ console.log(Math.max(20, 30, -10, -25, 0, 50))      // 50
 // generate random numbers form 0 to 0.999999
 const randomNum = Math.floor(Math.random() * 11)
 console.log(randomNum)
+
+
+// String Methods:
+let js = "JavaScriptia"
+console.log(js.length)
+
+console.log(js.length - 1);         // last index of a string,
+
+console.log(js.toLowerCase());
+console.log(js.toUpperCase());
+
+// substr(): It takes two arguments, the starting index and number of characters to slice.
+console.log(js.substr(4,6));        // Script
+
+// substring(): It takes two arguments, the starting index and the stopping index but it doesn't include the character at the stopping index.
+console.log(js.substring(4,6))      // Sc
+
+// split(): The split method splits a string at a specified place.
+console.log(js.split())
+console.log(js.split(','))
