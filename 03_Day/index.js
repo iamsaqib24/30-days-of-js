@@ -123,3 +123,23 @@ number = -5
 number > 0
     ? console.log(`${number} is a positive number`)
     : console.log(`${number} is a negative number`)
+
+
+// Date Object:
+
+// const now = new Date();
+
+// console.log(now.getFullYear());         // 2022
+// console.log(now.getMonth());
+// console.log(now.getDate());
+// console.log(now.getDay());
+// console.log(now.getTime());
+
+const now = new Date();
+const year = now.getFullYear();
+const month = now.getMonth() + 1;
+const date = now.getDate();
+const hours = now.getHours();
+const minutes = now.getMinutes();
+
+console.log(`${date}/${month}/${year} ${hours}:${minutes}`);
