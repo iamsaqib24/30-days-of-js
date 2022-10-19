@@ -54,3 +54,14 @@ let isRaining = true
 isRaining
     ? console.log("You need rain-coat.")
     : console.log("No need for rain-coat.")
+
+
+// Exercises:
+
+let age = 17
+if(age >= 18){
+    console.log("You are old enough to drive!");
+}
+else{
+    console.log(`You are left ${18 - age} years to drive!`);
+}
