@@ -1,104 +1,121 @@
-// // Loops:
-// // for loop,
+// // // Loops:
+// // // for loop,
 
-// for(let i = 0; i <= 5; i++ ){
+// // for(let i = 0; i <= 5; i++ ){
+// //     console.log(i);
+// // }
+
+// // console.log("Now, reverse counting");
+
+// // for(let i = 5; i >= 0; i--){
+// //     console.log(i);
+// // }
+
+
+// // // Creating a new array based on the existing array
+
+// // const states = ["Punjab", "Rajasthan", "Karnataka", "Himachal Pradesh"];
+// // const newStates = [];
+
+// // for(let i = 0; i < states.length; i++){
+// //     newStates.push(states[i].toLocaleUpperCase());
+// // }
+// // console.log("Normal States array : ", states);
+// // console.log("Capitalize array : ", newStates);
+
+// // const numbers = [2, 4, 6, 8];
+// // const newNumbers = [];
+
+// // for(let i = 0; i < numbers.length; i++){
+// //     newNumbers.push(numbers[i] ** 2);
+// // }
+// // console.log("Normal array : ", numbers);
+// // console.log("Square of the above array : ", newNumbers);
+
+// // // Adding all elements in the array
+
+// // const num = [1, 2, 3, 4, 5];
+// // let sum = 0;
+
+// // for(let i = 0; i < num.length; i++){
+// //     sum = sum + num[i];
+// // }
+// // console.log("Sum of array elements are : ", sum);
+
+
+// // while loop & do while loop,
+// console.log("while loop");
+// let i = 10;
+// while(i >= 0){
 //     console.log(i);
+//     i--;
 // }
 
-// console.log("Now, reverse counting");
+// // do while loop, it will execute once, whether condition is true or not.
+// console.log("do while loop");
+// let j = 0;
+// do{
+//     console.log(j);
+//     j++;
+// }while(j <= 1)
 
-// for(let i = 5; i >= 0; i--){
-//     console.log(i);
-// }
 
+// // for of loop
+// // We use for of loop for arrays. It is very hand way to iterate through an array if we are not interested in the index of each element in the array.
+// console.log("for of loop");
 
-// // Creating a new array based on the existing array
-
-// const states = ["Punjab", "Rajasthan", "Karnataka", "Himachal Pradesh"];
-// const newStates = [];
-
-// for(let i = 0; i < states.length; i++){
-//     newStates.push(states[i].toLocaleUpperCase());
-// }
-// console.log("Normal States array : ", states);
-// console.log("Capitalize array : ", newStates);
-
-// const numbers = [2, 4, 6, 8];
-// const newNumbers = [];
-
-// for(let i = 0; i < numbers.length; i++){
-//     newNumbers.push(numbers[i] ** 2);
-// }
-// console.log("Normal array : ", numbers);
-// console.log("Square of the above array : ", newNumbers);
-
-// // Adding all elements in the array
-
-// const num = [1, 2, 3, 4, 5];
+// const numbers = [2, 5, 8, 11, 14];
 // let sum = 0;
-
-// for(let i = 0; i < num.length; i++){
-//     sum = sum + num[i];
+// for (const nums of numbers) {
+//     console.log(nums);
 // }
-// console.log("Sum of array elements are : ", sum);
+
+// for (const nums of numbers) {
+//     sum = sum + nums;
+// }
+// console.log(sum);
+
+// const countries = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
+// const newArr = []
+// for(const country of countries){
+//   newArr.push(country.toUpperCase())
+// }
+// console.log(countries);
+// console.log(newArr);
 
 
-// while loop & do while loop,
-console.log("while loop");
-let i = 10;
-while(i >= 0){
-    console.log(i);
-    i--;
-}
+// // break
+// // Break is used to interrupt a loop.
+// for(let i = 0; i <= 5; i++){
+//     if(i == 3){
+//       break
+//     }
+//     console.log(i);
+// }           // 0 1 2
+// // The above code stops if 3 found in the iteration process.
 
-// do while loop, it will execute once, whether condition is true or not.
-console.log("do while loop");
-let j = 0;
-do{
-    console.log(j);
-    j++;
-}while(j <= 1)
-
-
-// for of loop
-// We use for of loop for arrays. It is very hand way to iterate through an array if we are not interested in the index of each element in the array.
-console.log("for of loop");
-
-const numbers = [2, 5, 8, 11, 14];
-let sum = 0;
-for (const nums of numbers) {
-    console.log(nums);
-}
-
-for (const nums of numbers) {
-    sum = sum + nums;
-}
-console.log(sum);
-
-const countries = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
-const newArr = []
-for(const country of countries){
-  newArr.push(country.toUpperCase())
-}
-console.log(countries);
-console.log(newArr);
+// // continue
+// // We use the keyword continue to skip a certain iterations.
+// for(let i = 0; i <= 5; i++){
+//     if(i == 3){
+//       continue
+//     }
+//     console.log(i)
+// }           // 0 1 2 4 5
 
 
-// break
-// Break is used to interrupt a loop.
-for(let i = 0; i <= 5; i++){
-    if(i == 3){
-      break
+// Excercises:
+
+// Pattern
+let n = 5, pattern = '';
+for(let i = 1; i <= n; i++){
+    for(let j = 1; j <= i; j++){
+        pattern = pattern + "#";
     }
-    console.log(i);
-}           // 0 1 2
-// The above code stops if 3 found in the iteration process.
+    pattern = pattern + "\n";
+}
+console.log(pattern);
 
-// continue
-// We use the keyword continue to skip a certain iterations.
-for(let i = 0; i <= 5; i++){
-    if(i == 3){
-      continue
-    }
-    console.log(i)
-}           // 0 1 2 4 5
+// program to generate random strings
+const result = Math.random().toString(36).substring(2);
+console.log(result);
