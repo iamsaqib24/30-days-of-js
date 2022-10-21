@@ -57,4 +57,40 @@ const helloWorld = function() {
 helloWorld();
 
 
-// Expression Function
+// Expression Function,
+// Expression functions are anonymous functions. After we create a function without a name and we assign it to a variable. To return a value from the function we should call the variable. Look at the example below.
+
+const multiplication = function(x, y, z) {
+    return x * y * z;
+}
+console.log(multiplication(2, 4, 1));
+
+
+// Self Invoking Functions,
+// Self invoking functions are anonymous functions which do not need to be called to return a value.
+
+let squaredNum = (function(n) {
+    return n * n;
+})(10)
+
+console.log(squaredNum);
+
+
+// Arrow Function,
+// Arrow function is an alternative to write a function, however function declaration and arrow function have some minor differences.
+// Arrow function uses arrow instead of the keyword function to declare a function.
+
+const changeToUpperCase = arr => {
+    const newArr = [];
+    for (const element of arr) {
+      newArr.push(element.toUpperCase());
+    }
+    return newArr;
+}
+const countries = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland'];
+console.log(changeToUpperCase(countries));
+
+// Another example of arrow function,
+
+const printFullName = (firstName, lastName) => `${firstName} ${lastName}`;
+console.log(printFullName('Mohammad', 'Saqib'));
