@@ -110,3 +110,7 @@ function calculateAge(birthYear, currentYear = 2022) {
     return currentYear - birthYear;
 }
 console.log('Current Age is : ', calculateAge(1996));
+
+// Same above code using arrow function,
+const calculateAgeArrowFunction = (birthYear, currentYear = 2022) => currentYear - birthYear;
+console.log('Age from arrow function : ', calculateAgeArrowFunction(2000));
