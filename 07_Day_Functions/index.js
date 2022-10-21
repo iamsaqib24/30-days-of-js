@@ -94,3 +94,19 @@ console.log(changeToUpperCase(countries));
 
 const printFullName = (firstName, lastName) => `${firstName} ${lastName}`;
 console.log(printFullName('Mohammad', 'Saqib'));
+
+
+// Function with default parameters,
+
+function greetings(name = 'Tom') {
+    let message = `${name}, welcome to 30 Days Of JavaScript!`;
+    return message;
+}
+console.log(greetings());
+console.log(greetings('Saqib'));
+
+// Another example,
+function calculateAge(birthYear, currentYear = 2022) {
+    return currentYear - birthYear;
+}
+console.log('Current Age is : ', calculateAge(1996));
