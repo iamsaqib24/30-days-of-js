@@ -63,7 +63,7 @@ const person = {
       'D3.js'
     ],
     getFullName: function() {
-      return `${this.firstName}${this.lastName}`
+      return `${this.firstName} ${this.lastName}`
     },
     'phone number': '+3584545454545'
   }
@@ -83,3 +83,6 @@ const person = {
 
   // for instance to access the phone number we only use the square bracket method
   console.log(person['phone number'])
+
+  // using objects method
+  console.log(person.getFullName());
