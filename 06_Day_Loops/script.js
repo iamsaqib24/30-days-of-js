@@ -31,9 +31,19 @@
 
 // Adding elements in the array
 
+// const numbers = [1, 2, 3, 4, 5];
+// let sum = 0;
+// for(let i = 0; i < numbers.length; i++) {
+//     sum += numbers[i];
+// }
+// console.log(sum);
+
+// Creating a new array based on the existing array
+
 const numbers = [1, 2, 3, 4, 5];
-let sum = 0;
+const newArr = [];
 for(let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
+    newArr.push(numbers[i] ** 2);
 }
-console.log(sum);
+console.log(numbers);
+console.log(newArr);
