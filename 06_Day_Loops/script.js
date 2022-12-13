@@ -62,3 +62,27 @@
 //     sum+= num;
 // }
 // console.log(sum);
+
+// const countries = ["India", "Japan", "China", "Thailand", "Singapore"];
+// const newArr = [];
+
+// for (const country of countries) {
+//     newArr.push(country.toUpperCase());
+// }
+// console.log(newArr);
+
+// Break
+for(let i = 0; i < 5; i++) {
+    if (i == 3) {
+        break;
+    }
+    console.log(i);
+}
+
+// Continue
+for(let i = 0; i < 5; i++) {
+    if (i == 2) {
+        continue;
+    }
+    console.log(i);
+}
