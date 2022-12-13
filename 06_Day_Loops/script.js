@@ -72,17 +72,29 @@
 // console.log(newArr);
 
 // Break
-for(let i = 0; i < 5; i++) {
-    if (i == 3) {
-        break;
-    }
-    console.log(i);
-}
+// for(let i = 0; i < 5; i++) {
+//     if (i == 3) {
+//         break;
+//     }
+//     console.log(i);
+// }
 
 // Continue
-for(let i = 0; i < 5; i++) {
-    if (i == 2) {
-        continue;
+// for(let i = 0; i < 5; i++) {
+//     if (i == 2) {
+//         continue;
+//     }
+//     console.log(i);
+// }
+
+// Pattern
+
+let n = 5;
+let pattern = "";
+for(let i = 1; i <= n; i++){
+    for(let j = 1; j <= i; j++){
+        pattern += "*";
     }
-    console.log(i);
+    pattern += "\n";
 }
+console.log(pattern);
